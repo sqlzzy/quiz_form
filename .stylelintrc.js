@@ -1,4 +1,8 @@
 module.exports = {
+    'extends' : [
+        'stylelint-config-html/vue',
+        'stylelint-config-recommended-vue/scss',
+    ],
     'plugins': [
         'stylelint-order',
     ],
@@ -219,10 +223,6 @@ module.exports = {
         'string-quotes': ['double', {
             'message': 'В проекте двойные кавычки'
         }],
-
-        'selector-attribute-operator-blacklist': [['id'], {
-            'message': 'Для стилизации ID использовать нельзя'
-        }],
         'selector-pseudo-class-case': ['lower', {
             'message': 'Псевдоклассы необходимо писать строчными буквами'
         }],
@@ -295,10 +295,13 @@ module.exports = {
         'media-feature-parentheses-space-inside': ['never', {
             'message': 'Пробелы после «(» и перед «)» использовать нельзя'
         }],
-
-        'ignoreFiles': [
-            '**/node_modules/*',
-            '**/frontend/*',
-        ],
     },
+    'configBasedir' : './',
+    'overrides': [
+        {
+            'files': ["*.vue", "**/*.vue"],
+            'customSyntax': 'postcss-html'
+        }
+
+    ]
 }
