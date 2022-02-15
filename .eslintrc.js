@@ -1,23 +1,13 @@
 module.exports = {
-    extends: [
-        'alloy',
-        'alloy/vue',
-    ],
     env: {
-    // Your environments (which contains several predefined global variables)
-    //
-    // browser: true,
-    // node: true,
-    // mocha: true,
-    // jest: true,
-    // jquery: true
+        node: true,
     },
-    globals: {
-    // Your global variables (setting to false means it's not allowed to be reassigned)
-    //
-    // myGlobal: false
-    },
+    extends: [
+        'eslint:recommended',
+        'plugin:vue/vue3-recommended',
+    ],
     rules: {
-    // Customize your rules
-    },
+        // override/add rules settings here, such as:
+        // 'vue/no-unused-vars': 'error'
+    }
 }
