@@ -1,6 +1,9 @@
 {
   "name": "quiz-form",
   "version": "0.0.0",
+  "engines": {
+    "node": "~16.14"
+  },
   "scripts": {
     "dev": "vite",
     "build": "vite build",
