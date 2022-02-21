@@ -16,9 +16,11 @@
     "devDependencies": {
         "@babel/core": "^7.17.5",
         "@babel/eslint-parser": "^7.17.0",
+        "@babel/preset-env": "^7.16.11",
         "@vitejs/plugin-vue": "^2.0.0",
         "@vue/test-utils": "^2.0.0-rc.17",
         "@vue/vue3-jest": "^27.0.0-alpha.4",
+        "babel-core": "^7.0.0-bridge.0",
         "babel-eslint": "^10.1.0",
         "babel-jest": "^27.5.1",
         "eslint": "^8.9.0",
@@ -42,7 +44,9 @@
     "jest": {
         "verbose": true,
         "transform": {
-            "\\.[jt]sx?$": "babel-jest"
-        }
+            "\\.[jt]sx?$": "babel-jest",
+            "^.+\\.vue$": "@vue/vue3-jest"
+        },
+        "testEnvironment": "jsdom"
     }
 }
