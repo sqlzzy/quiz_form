@@ -1,37 +1,48 @@
 {
-  "name": "quiz-form",
-  "version": "0.0.0",
-  "engines": {
-    "node": "~16.14"
-  },
-  "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview"
-  },
-  "dependencies": {
-    "vue": "^3.2.25",
-    "vuestic-ui": "^1.3.4"
-  },
-  "devDependencies": {
-    "@babel/eslint-parser": "^7.17.0",
-    "@vitejs/plugin-vue": "^2.0.0",
-    "babel-eslint": "^10.1.0",
-    "eslint": "^8.9.0",
-    "eslint-config-alloy": "^3.10.0",
-    "eslint-plugin-jest": "^26.1.0",
-    "eslint-plugin-vue": "^8.4.1",
-    "postcss": "^8.4.6",
-    "postcss-html": "^1.3.0",
-    "postcss-scss": "^4.0.3",
-    "sass": "^1.49.7",
-    "stylelint": "^14.5.0",
-    "stylelint-config-html": "^1.0.0",
-    "stylelint-config-recommended-scss": "^5.0.2",
-    "stylelint-config-recommended-vue": "^1.3.0",
-    "stylelint-order": "^5.0.0",
-    "vite": "^2.7.2",
-    "vite-plugin-stylelint": "^1.1.3",
-    "vue-eslint-parser": "^8.2.0"
-  }
+    "name": "quiz-form",
+    "version": "0.0.0",
+    "engines": {
+        "node": "~16.14"
+    },
+    "scripts": {
+        "dev": "vite",
+        "build": "vite build",
+        "preview": "vite preview"
+    },
+    "dependencies": {
+        "vue": "^3.2.25",
+        "vuestic-ui": "^1.3.4"
+    },
+    "devDependencies": {
+        "@babel/core": "^7.17.5",
+        "@babel/eslint-parser": "^7.17.0",
+        "@vitejs/plugin-vue": "^2.0.0",
+        "@vue/test-utils": "^2.0.0-rc.17",
+        "@vue/vue3-jest": "^27.0.0-alpha.4",
+        "babel-eslint": "^10.1.0",
+        "babel-jest": "^27.5.1",
+        "eslint": "^8.9.0",
+        "eslint-config-alloy": "^3.10.0",
+        "eslint-plugin-jest": "^26.1.1",
+        "eslint-plugin-vue": "^8.4.1",
+        "jest": "^27.5.1",
+        "postcss": "^8.4.6",
+        "postcss-html": "^1.3.0",
+        "postcss-scss": "^4.0.3",
+        "sass": "^1.49.7",
+        "stylelint": "^14.5.0",
+        "stylelint-config-html": "^1.0.0",
+        "stylelint-config-recommended-scss": "^5.0.2",
+        "stylelint-config-recommended-vue": "^1.3.0",
+        "stylelint-order": "^5.0.0",
+        "vite": "^2.7.2",
+        "vite-plugin-stylelint": "^1.1.3",
+        "vue-eslint-parser": "^8.2.0"
+    },
+    "jest": {
+        "verbose": true,
+        "transform": {
+            "\\.[jt]sx?$": "babel-jest"
+        }
+    }
 }
